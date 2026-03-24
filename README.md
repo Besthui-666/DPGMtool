@@ -16,7 +16,10 @@ The entire pipeline mainly consists of 4 shell scripts and 2 R scripts.The shell
 
 3)Dis_candidate_part3.sh: This script counts the number of variant sites for each gene and calculates the number of special sites. For example, IF You wanna focus on the genetic basis of heterosis contributed by the restorer line Pos. Therefore, a special site was defined as a locus where the genotype of Pos was different from that of all other parents (for example, Pos carries genotype T, while all other parents carry genotype A).
 
-##2.Usage
+##2.Pipeline show
+<img width="1241" height="838" alt="image" src="https://github.com/user-attachments/assets/d2055c09-9bb7-4b86-9e7b-0d1f142bbc07" />
+
+##3.Usage
 
 1)Dis_candidate_part1.sh: Input parameters include the working path for storing files, data path for built-in files, script path, software path for required tools, name of the genome-wide VCF file, interval range for extracting single-gene VCF files, gene list for analysis, prefixes for a series of output files, name of the VCF file for batch haplotype analysis, width and length for haplotype visualization, number of threads for parallel running, and an optional parameter for whether to process the genome-wide VCF file.
 
@@ -102,8 +105,7 @@ bash Dis_candidate_part3.sh -w <Work_path> -d <Datapath> -s <Scriptpath>  -g <Ge
         -h: Display this help message
 
 
-##3.Pipeline show
-<img width="1241" height="838" alt="image" src="https://github.com/user-attachments/assets/d2055c09-9bb7-4b86-9e7b-0d1f142bbc07" />
+
 
 ##4.Example
 
