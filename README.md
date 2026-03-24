@@ -21,14 +21,22 @@ The entire pipeline mainly consists of 4 shell scripts and 2 R scripts.The shell
 1)Dis_candidate_part1.sh: Input parameters include the working path for storing files, data path for built-in files, script path, software path for required tools, name of the genome-wide VCF file, interval range for extracting single-gene VCF files, gene list for analysis, prefixes for a series of output files, name of the VCF file for batch haplotype analysis, width and length for haplotype visualization, number of threads for parallel running, and an optional parameter for whether to process the genome-wide VCF file.
 
 bash Dis_candidate_part1.sh -w <Work_path> -d <Datapath> -s <Scriptpath> -t <Toolpath> -v <Vcf_gz> -b <Basepair>  -g <Gene_list> -o <Output_prefix> -V <vcfgz> -W <Width> -H <Height> -T <Threads> [-p]
+
         -w: Workpath you wanna do
+        
         -d: Datapath you store file
+        
         -s: Scriptpath you use
+        
         -t: Toopath you use
+        
         -v: Orginal Vcf_gz you wanna handle
+        
         -b: you wanna extract round ,for example,2000:only promoter;0:only gene;2000_0;promoter+gene
+        
         -g: Gene_list you wanna analysis
-        -o: finalvcf use to analysis outputprefix
+        
+        -o: finalvcf use to analysis outputprefix\n
         -V: vcf_gz use to Dis_hap analysi
         -W: haplotype draw Width
         -H: haplotype draw Height
