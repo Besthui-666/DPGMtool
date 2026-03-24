@@ -19,9 +19,57 @@ The entire pipeline mainly consists of 4 shell scripts and 2 R scripts.The shell
 ##Usage
 
 1)Dis_candidate_part1.sh: Input parameters include the working path for storing files, data path for built-in files, script path, software path for required tools, name of the genome-wide VCF file, interval range for extracting single-gene VCF files, gene list for analysis, prefixes for a series of output files, name of the VCF file for batch haplotype analysis, width and length for haplotype visualization, number of threads for parallel running, and an optional parameter for whether to process the genome-wide VCF file.
+
+bash Dis_candidate_part1.sh -w <Work_path> -d <Datapath> -s <Scriptpath> -t <Toolpath> -v <Vcf_gz> -b <Basepair>  -g <Gene_list> -o <Output_prefix> -V <vcfgz> -W <Width> -H <Height> -T <Threads> [-p]
+        -w: Workpath you wanna do
+        -d: Datapath you store file
+        -s: Scriptpath you use
+        -t: Toopath you use
+        -v: Orginal Vcf_gz you wanna handle
+        -b: you wanna extract round ,for example,2000:only promoter;0:only gene;2000_0;promoter+gene
+        -g: Gene_list you wanna analysis
+        -o: finalvcf use to analysis outputprefix
+        -V: vcf_gz use to Dis_hap analysi
+        -W: haplotype draw Width
+        -H: haplotype draw Height
+        -T: Threads that use in Dis_F1_hap analysis
+        -p: Optional, execute VCF file processing steps
+        -h: Display this help message
+
+
 2)Dis_candidate_part2.sh: Input parameters include the working path, data path for built-in files, script path, interval range for single-gene VCF extraction, phenotypic file for association with genetic distance, phenotypic grouping file, genetic distance grouping file, year information, output file prefix, and two optional parameters for genetic distance processing.
+
+bash Dis_candidate_part2.sh -w <Work_path> -d <Datapath> -s <Scriptpath>  -b <Basepair> -p <Phenotype> -i <Pheinfo> -m <Mapdisinfo> -y <Year> -o <Prefix_output>  [-P] [-S]
+        -w: Workpath you wanna do
+        -d: Datapath you store file
+        -s: Scriptpath you use
+        -b: you wanna extract round ,for example,2000:only promoter;0:only gene;2000_0;promoter+gene
+        -p: you wanna associate Phenotype with Dis
+        -i: Pheinfo used in match phenotype
+        -m: Map dis to handleDis
+        -y: data when you use, for instance,24/2024
+        -o: result of pearson's output prefix
+        -P: Optional, execute generation of Dis merge steps
+        -S: Optional, execute generation of Dis processing steps
+        -h: Display this help message
+
+
 3)Dis_candidate_part3.sh: Input parameters include the working path, data path for built-in files, script path, gene ID, output file prefix, and width and length for haplotype visualization.
 In summary, the construction of this computational framework enables comprehensive scanning and evaluation of the potential heterotic effects of individual genes at the genome-wide level, thereby facilitating the identification of key heterosis-related genes. Moreover, this framework can greatly reduce population sequencing costs and improve the efficiency of mining heterosis genes.
 
+bash Dis_candidate_part3.sh -w <Work_path> -d <Datapath> -s <Scriptpath>  -g <Gene_ID> -o <Output_prefix> -W <Width> -H <Height>
+        -w: Workpath you wanna do
+        -d: Datapath you store file
+        -s: Scriptpath you use
+        -g: Gene_ID you wanna analysis
+        -o: outputprefix
+        -W: haplotype draw Width
+        -H: haplotype draw Height
+        -h: Display this help message
+
+
 ##Pipeline show
 <img width="1241" height="838" alt="image" src="https://github.com/user-attachments/assets/d2055c09-9bb7-4b86-9e7b-0d1f142bbc07" />
+
+##Example
+
