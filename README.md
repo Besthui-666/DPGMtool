@@ -108,4 +108,9 @@ bash Dis_candidate_part3.sh -w <Work_path> -d <Datapath> -s <Scriptpath>  -g <Ge
 
 
 ##4.Example
+This example contain two genes, I will show how to use this pipeline
+bash Dis_candidate_part1.sh -w result -d data -s scripts -t yourtoolpath -v SNP_INDEL.ann.biallilic.vcf.gz -b 2000_0 -g LOC_Os08g34760 -o LOC_Os08g34760 -V SNP_INDEL.ann.biallilic.vcf.gz -W 12 -H 6 -T 24
 
+##5.Result
+
+1)
