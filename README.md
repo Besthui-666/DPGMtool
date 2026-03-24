@@ -54,17 +54,29 @@ bash Dis_candidate_part1.sh -w <Work_path> -d <Datapath> -s <Scriptpath> -t <Too
 2)Dis_candidate_part2.sh: Input parameters include the working path, data path for built-in files, script path, interval range for single-gene VCF extraction, phenotypic file for association with genetic distance, phenotypic grouping file, genetic distance grouping file, year information, output file prefix, and two optional parameters for genetic distance processing.
 
 bash Dis_candidate_part2.sh -w <Work_path> -d <Datapath> -s <Scriptpath>  -b <Basepair> -p <Phenotype> -i <Pheinfo> -m <Mapdisinfo> -y <Year> -o <Prefix_output>  [-P] [-S]
+        
         -w: Workpath you wanna do
+        
         -d: Datapath you store file
+        
         -s: Scriptpath you use
+        
         -b: you wanna extract round ,for example,2000:only promoter;0:only gene;2000_0;promoter+gene
+        
         -p: you wanna associate Phenotype with Dis
+        
         -i: Pheinfo used in match phenotype
+        
         -m: Map dis to handleDis
+        
         -y: data when you use, for instance,24/2024
+        
         -o: result of pearson's output prefix
+        
         -P: Optional, execute generation of Dis merge steps
+        
         -S: Optional, execute generation of Dis processing steps
+        
         -h: Display this help message
 
 
@@ -72,13 +84,21 @@ bash Dis_candidate_part2.sh -w <Work_path> -d <Datapath> -s <Scriptpath>  -b <Ba
 In summary, the construction of this computational framework enables comprehensive scanning and evaluation of the potential heterotic effects of individual genes at the genome-wide level, thereby facilitating the identification of key heterosis-related genes. Moreover, this framework can greatly reduce population sequencing costs and improve the efficiency of mining heterosis genes.
 
 bash Dis_candidate_part3.sh -w <Work_path> -d <Datapath> -s <Scriptpath>  -g <Gene_ID> -o <Output_prefix> -W <Width> -H <Height>
+
         -w: Workpath you wanna do
+        
         -d: Datapath you store file
+        
         -s: Scriptpath you use
+        
         -g: Gene_ID you wanna analysis
+        
         -o: outputprefix
+        
         -W: haplotype draw Width
+        
         -H: haplotype draw Height
+        
         -h: Display this help message
 
 
