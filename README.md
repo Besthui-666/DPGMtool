@@ -36,12 +36,18 @@ bash Dis_candidate_part1.sh -w <Work_path> -d <Datapath> -s <Scriptpath> -t <Too
         
         -g: Gene_list you wanna analysis
         
-        -o: finalvcf use to analysis outputprefix\n
-        -V: vcf_gz use to Dis_hap analysi
+        -o: finalvcf use to analysis outputprefix
+        
+        -V: vcf_gz use to Dis_hap analysis
+        
         -W: haplotype draw Width
+        
         -H: haplotype draw Height
+        
         -T: Threads that use in Dis_F1_hap analysis
+        
         -p: Optional, execute VCF file processing steps
+        
         -h: Display this help message
 
 
